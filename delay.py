@@ -8,8 +8,8 @@ import re
 
 #APIキー
 twitter = Twython(Token.CONSUMER_KEY,Token.CONSUMER_SECRET,Token.ACCESS_KEY,Token.ACCESS_SECRET)
-#アカウント名
-username = '@~~~~'
+#通知がほしいアカウント名
+username = Token.username
 #遅延情報のrss
 url = 'https://rti-giken.jp/fhc/api/train_tetsudo/delay.json'
 #jsonファイルを開く
@@ -28,8 +28,8 @@ h=dt_now.strftime("%Y/%m/%d %H:%M:%S")
 for delay in sen:
     if  delay in data:
         result += delay + '線'
-#userID(数字)
-user = 
+#BOTのuserID
+user = Token.userID
 #何件のツイートを読み込むか
 count =10
 #タイムラインの取得
@@ -39,7 +39,7 @@ check = False
 #タイムラインのループ
 for tweet in timeline:
     #リプライツイートを判定
-    if tweet['in_reply_to_screen_name'] == 'kagu_96':
+    if tweet['in_reply_to_screen_name'] == username:
         #ツイートのテキストを取得
         tweettext = (tweet['text'])
        #テキストをカットする
@@ -54,4 +54,4 @@ for tweet in timeline:
            break
 #resultが空白、checkがTrueじゃないときにツイート
 if result !='' and check != True :
-   twitter.update_status(status=username+result+'が遅延しています'+'\n' + h)
+   twitter.update_status(status='@' + username + result + 'が遅延しています' + '\n' + h)
