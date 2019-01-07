@@ -53,7 +53,7 @@ for tweet in timeline:
        #現在の時間から15分引いた時間を代入
         date_check = dt_now - datetime.timedelta(minutes=15)
         #ツイート時間が15分前か判定、textが被っていないか判定
-        if date_check < tweetdat and deltext == result:
+        if date_check < tweetdate and deltext == result:
            check = True
            break
 
