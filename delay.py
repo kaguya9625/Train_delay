@@ -38,18 +38,20 @@ timeline = twitter.get_user_timeline(user_id = user,count = count,since_id=10,ex
 check = False
 #タイムラインのループ
 for tweet in timeline:
+    #ツイートのテキストを取得
+    tweettext = (tweet['text'])
+    #ツイートの文字削除
+    deltext = tweettext.strip('が遅延しています。')
     #リプライツイートを判定
     if tweet['in_reply_to_screen_name'] == 'kagu_96':
-        #ツイートのテキストを取得
-        tweettext = (tweet['text'])
        #テキストをカットする
         cuttweet = tweettext.splitlines()
         #2行目をdatetime型に変換
         tweetdate = datetime.datetime.strptime(cuttweet[1],'%Y/%m/%d %H:%M:%S')
        #現在の時間から15分引いた時間を代入
         date_check = dt_now - datetime.timedelta(minutes=15)
-        #ツイート時間が15分前か判定
-        if date_check < tweetdate:
+        #ツイート時間が15分前か判定、textが被っていないか判定
+        if date_check < tweetdat and deltext == result:
            check = True
            break
 #resultが空白、checkがTrueじゃないときにツイート
