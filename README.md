@@ -2,10 +2,22 @@
 
 完全に自分用の物なので、路線名などは自分が使う物、また近いものを使用しています。
 
-TwitterのAPIキーは別ファイルに保存しています。
+
 使用する場合
-12行目の＠以降に自分のTwitterID
-32行目にTwitterBotのuserIDを書いてください
+別ファイルに(このソースではToken.py)
+
+#TwitterAPIキー
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
+
+#BOTの数字のuserIDを記載してください
+userID = 
+
+#通知がほしいアカウントの＠を抜いたID
+username = ''
+
 
 遅延情報はこちらのjsonから取得しています。 "https://rti-giken.jp/fhc/api/train_tetsudo/"
 
