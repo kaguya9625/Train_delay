@@ -52,6 +52,7 @@ for tweet in timeline:
         if date_check < tweetdate:
            check = True
            break
+           
 #resultが空白、checkがTrueじゃないときにツイート
 if result !='' and check != True :
    twitter.update_status(status='@' + username + result + 'が遅延しています' + '\n' + h)
