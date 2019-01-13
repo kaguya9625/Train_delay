@@ -1,23 +1,20 @@
-���̃v���O������raspberry pi�ŉғ����Ă���TwitterBot�œd�Ԃ̒x������v���C���Ă����\�[�X�R�[�h�ł��B
+﻿このプログラムはraspberry piで稼動しているTwitterBotで電車の遅延情報をリプライしてくれるソースコードです。
+完全に自分用の物なので、路線名などは自分が使う物、また近いものを使用しています。
 
-���S�Ɏ����p�̕��Ȃ̂ŁA�H�����Ȃǂ͎������g�����A�܂��߂���̂�g�p���Ă��܂��B
+使用する場合 
+別ファイルに(このソースではToken.py) 
+#TwitterAPIキー
 
+CONSUMER_KEY = '' 
+CONSUMER_SECRET = '' 
+ACCESS_KEY = '' 
+ACCESS_SECRET = '' 
 
-�g�p����ꍇ
-�ʃt�@�C����(���̃\�[�X�ł�Token.py)
-
-#TwitterAPI�L�[
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''
-ACCESS_KEY = ''
-ACCESS_SECRET = ''
-
-#BOT�̐�����userID��L�ڂ��Ă�������
+#BOTの数字のuserIDを記載してください 
 userID = 
 
-#�ʒm���ق����A�J�E���g�́��𔲂���ID
+#通知がほしいアカウントの＠を抜いたID 
 username = ''
 
 
-�x�����͂������json����擾���Ă��܂��B "https://rti-giken.jp/fhc/api/train_tetsudo/"
-
+遅延情報はこちらのjsonから取得しています。 "https://rti-giken.jp/fhc/api/train_tetsudo/" 
