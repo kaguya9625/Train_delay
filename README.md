@@ -1,23 +1,23 @@
-‚±‚ÌƒvƒƒOƒ‰ƒ€‚Íraspberry pi‚Ì‚Å‰Ò“®‚µ‚Ä‚¢‚éTwitterBot‚Å“dŽÔ‚Ì’x‰„î•ñ‚ðƒŠƒvƒ‰ƒC‚µ‚Ä‚­‚ê‚éƒ\[ƒXƒR[ƒh‚Å‚·B
+ï¿½ï¿½ï¿½Ìƒvï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½raspberry piï¿½Å‰Ò“ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½TwitterBotï¿½Å“dï¿½Ô‚Ì’xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½\ï¿½[ï¿½Xï¿½Rï¿½[ï¿½hï¿½Å‚ï¿½ï¿½B
 
-Š®‘S‚ÉŽ©•ª—p‚Ì•¨‚È‚Ì‚ÅA˜Hü–¼‚È‚Ç‚ÍŽ©•ª‚ªŽg‚¤•¨A‚Ü‚½‹ß‚¢‚à‚Ì‚ðŽg—p‚µ‚Ä‚¢‚Ü‚·B
+ï¿½ï¿½ï¿½Sï¿½ÉŽï¿½ï¿½ï¿½ï¿½pï¿½Ì•ï¿½ï¿½È‚Ì‚ÅAï¿½Hï¿½ï¿½ï¿½ï¿½ï¿½È‚Ç‚ÍŽï¿½ï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½Ü‚ï¿½ï¿½ß‚ï¿½ï¿½ï¿½Ì‚ï¿½gï¿½pï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B
 
 
-Žg—p‚·‚éê‡
-•Êƒtƒ@ƒCƒ‹‚É(‚±‚Ìƒ\[ƒX‚Å‚ÍToken.py)
+ï¿½gï¿½pï¿½ï¿½ï¿½ï¿½ê‡
+ï¿½Êƒtï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ìƒ\ï¿½[ï¿½Xï¿½Å‚ï¿½Token.py)
 
-#TwitterAPIƒL[
+#TwitterAPIï¿½Lï¿½[
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 ACCESS_KEY = ''
 ACCESS_SECRET = ''
 
-#BOT‚Ì”Žš‚ÌuserID‚ð‹LÚ‚µ‚Ä‚­‚¾‚³‚¢
+#BOTï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½userIDï¿½ï¿½Lï¿½Ú‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 userID = 
 
-#’Ê’m‚ª‚Ù‚µ‚¢ƒAƒJƒEƒ“ƒg‚Ì—‚ð”²‚¢‚½ID
+#ï¿½Ê’mï¿½ï¿½ï¿½Ù‚ï¿½ï¿½ï¿½ï¿½Aï¿½Jï¿½Eï¿½ï¿½ï¿½gï¿½Ìï¿½ï¿½ð”²‚ï¿½ï¿½ï¿½ID
 username = ''
 
 
-’x‰„î•ñ‚Í‚±‚¿‚ç‚Ìjson‚©‚çŽæ“¾‚µ‚Ä‚¢‚Ü‚·B "https://rti-giken.jp/fhc/api/train_tetsudo/"
+ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jsonï¿½ï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B "https://rti-giken.jp/fhc/api/train_tetsudo/"
 
